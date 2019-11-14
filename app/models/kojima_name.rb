@@ -4,7 +4,7 @@ class KojimaName < ApplicationRecord
         name += (cond_cond_name + " ") unless cond_cond_name.nil?
         name += full_name
         name += "Man" if man_cond
-        name
+        name.titlecase
     end
 
     def occupational_name(dice_value = nil)
@@ -24,7 +24,7 @@ class KojimaName < ApplicationRecord
         end
 
         name += "Man" if man_cond
-        name
+        name.titlecase
     end
 
     def horny_name(dice_value = nil)
@@ -44,7 +44,7 @@ class KojimaName < ApplicationRecord
         end
 
         name += "Man" if man_cond
-        name
+        name.titlecase
     end
 
     def the_name(dice_value = nil)
@@ -64,7 +64,7 @@ class KojimaName < ApplicationRecord
         end
 
         name += "Man" if man_cond
-        name
+        name.titlecase
     end
 
     def cool_name(dice_value = nil)
@@ -88,7 +88,7 @@ class KojimaName < ApplicationRecord
         end
 
         name += "Man" if man_cond
-        name
+        name.titlecase
     end
 
     def violent_name(dice_value = nil)
@@ -106,7 +106,7 @@ class KojimaName < ApplicationRecord
             name += tangible_fear + " " + least_stab_object
         end
 
-        name
+        name.titlecase
     end
 
     def lacks_subtext_name
@@ -116,6 +116,6 @@ class KojimaName < ApplicationRecord
         name += last_thing_you_did
 
         name += "Man" if man_cond
-        name
+        name.titlecase
     end
 end
