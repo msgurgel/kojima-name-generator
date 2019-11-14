@@ -1,0 +1,2 @@
+module KojimaNamesHelper
+end
