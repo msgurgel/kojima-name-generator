@@ -1,3 +1,77 @@
 // Place all the styles related to the KojimaNames controller here.
 // They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+
+form {
+    max-width: 20rem;
+    margin: 3rem auto;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    color: hsl(240, 70%, 30%);
+    font-size: 1.25rem;
+}
+
+input[type=text] {
+    margin: 1rem 0;
+    padding: 1rem;
+    color: hsl(240, 70%, 30%);
+    border: 1px solid hsl(240, 70%, 50%);
+    border-radius: 0.5rem;
+    min-height: 2rem;
+
+    &:focus, &:hover {
+        outline: none;
+        background-color: hsl(240, 70%, 98%);
+    }
+}
+
+input[type=submit] {
+    border-radius: 1rem;
+    background: hsl(240, 70%, 50%);
+    color: hsl(34, 68%, 91%);
+    padding: 0.5rem 2rem;
+    border: 1px solid hsl(0, 0%, 10%);
+    cursor: pointer;
+
+    &:focus, &:hover {
+        outline: none;
+        color: hsl(240, 70%, 30%);
+        background-color: hsl(240, 70%, 75%);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.enter-from-right {
+    animation-fill-mode: forwards;
+}
+
+.leave-to-left {
+    animation: leave-to-left;
+    animation-duration: 1500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes enter-from-right {
+    0% {
+        transform: translateX(100vw);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes leave-to-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100vw);
+    }
+}

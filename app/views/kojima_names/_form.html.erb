@@ -1,90 +1,68 @@
 <%= form_for @kojima_name do |f| %>
     <%# <%= render 'shared/error_messages', object: f.object %>
-    <h2>Personal Information</h2>
-    <%= f.label "1. What's your full name?" %>
+    <%# <h2>Personal Information</h2> %>
+    <%= f.label "1. What's your full name?", class: "question" %>
     <%= f.text_field :full_name %>
 
-    </br>
-
-    <%= f.label "2. What's your occupation? (single -er noun)?" %>
+    <%= f.label "2. What's your occupation? (single -er noun)?", class: "question" %>
     <%= f.text_field :one_word_occupation %>
-
-    </br>
 
     <%= f.label "3. What was your first pet's specific species/breed? " \
                 "If you never had a pet, please answer with an animal you wish " \
-                "you owned." %>
+                "you owned.", class: "question" %>
     <%= f.text_field :pet %>
 
-    </br>
-    <%= f.label "4. Condese your most embarrassing childhood memory into two words." %>
+    <%= f.label "4. Condese your most embarrassing childhood memory into two words.", class: "question" %>
     <%= f.text_field :two_word_memory %>
 
-    </br>
-    <%= f.label "5. What is the object you'd least like to be stabbed by?" %>
+    <%= f.label "5. What is the object you'd least like to be stabbed by?", class: "question"  %>
     <%= f.text_field :least_stab_object %>
 
-    </br>
-    <%= f.label "6. What is something you are good at? (Verb ending in -ing)" %>
+    <%= f.label "6. What is something you are good at? (Verb ending in -ing)", class: "question"  %>
     <%= f.text_field :good_at %>
-    </br>
 
-    <%= f.label "7. What is your greatest intangible fear (example: death, loneliness, fear itself)" %>
+    <%= f.label "7. What is your greatest intangible fear (example: death, loneliness, fear itself)", class: "question"  %>
     <%= f.text_field :intangible_fear %>
-    </br>
 
-    <%= f.label "8. What is your greatest tangible fear (example: horses)" %>
+    <%= f.label "8. What is your greatest tangible fear (example: horses)", class: "question"  %>
     <%= f.text_field :tangible_fear %>
-    </br>
 
-    <%= f.label "9. What is the last thing you did before starting this worksheet?" %>
+    <%= f.label "9. What is the last thing you did before starting this worksheet?", class: "question"  %>
     <%= f.text_field :last_thing_you_did %>
-    </br>
 
-    <%= f.label "10. What condition is your body currently in? (single word answer)" %>
+    <%= f.label "10. What condition is your body currently in? (single word answer)", class: "question"  %>
     <%= f.text_field :body_condition %>
-    </br>
 
-    <%= f.label "11. Favorite state of matter?" %>
+    <%= f.label "11. Favorite state of matter?", class: "question"  %>
     <%= f.text_field :fav_state_of_matter %>
-    </br>
 
-    <%= f.label '12. A word your name kind of sounds like' %>
+    <%= f.label '12. A word your name kind of sounds like', class: "question"  %>
     <%= f.text_field :similar_name %>
-    </br>
 
-    <%= f.label "13. What is your Zodiac sign?" %>
+    <%= f.label "13. What is your Zodiac sign?", class: "question"  %>
     <%= f.text_field :zodiac_sign %>
-    </br>
 
-    <%= f.label "14. If you had to define your personality in one word, what would it be?" %>
+    <%= f.label "14. If you had to define your personality in one word, what would it be?", class: "question"  %>
     <%= f.text_field :personality %>
-    </br>
 
-    <h2>Kojima Information</h2>
-    <%= f.label "15. Who is your favorite film character? (NOTE: must be played by Kurt Russell)" %>
+    <%# <h2>Kojima Information</h2> %>
+    <%= f.label "15. Who is your favorite film character? (NOTE: must be played by Kurt Russell)", class: "question"  %>
     <%= f.text_field :film_character %>
-    </br>
 
-    <%= f.label "16. What is the last word of the title of your favorite Kubrick film?" %>
+    <%= f.label "16. What is the last word of the title of your favorite Kubrick film?", class: "question"  %>
     <%= f.text_field :kubrick %>
-    </br>
 
-    <%= f.label "17. What is the first word in the title of your favorite Joy Division album?" %>
+    <%= f.label "17. What is the first word in the title of your favorite Joy Division album?", class: "question"  %>
     <%= f.text_field :joy_division %>
-    </br>
 
-    <%= f.label "18. What is a scientific term you picked up from listening to NPR once?" %>
+    <%= f.label "18. What is a scientific term you picked up from listening to NPR once?", class: "question"  %>
     <%= f.text_field :npr %>
-    </br>
 
-    <%= f.label "19. What is a piece of military hardware you think looks cool even though war is bad?" %>
+    <%= f.label "19. What is a piece of military hardware you think looks cool even though war is bad?", class: "question"  %>
     <%= f.text_field :military %>
-    </br>
 
-    <%= f.label "20. What is something you’d enjoy watching Mads Mikkelsen do? Please condese into one word." %>
+    <%= f.label "20. What is something you’d enjoy watching Mads Mikkelsen do? Please condese into one word.", class: "question"  %>
     <%= f.text_field :one_word_mikkelsen %>
-    </br>
 
     <%= f.submit "Generate Names" %>
 <% end %>
